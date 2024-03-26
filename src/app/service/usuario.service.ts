@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { IUsuario } from '../model/usuario';
 import { environment } from 'src/environments/environment.prod';
 
-const URL = environment.URLTEST
+const URL = environment.URLPROD
 
 @Injectable({
   providedIn: 'root'

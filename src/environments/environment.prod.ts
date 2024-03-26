@@ -1,4 +1,4 @@
 export const environment = {
-   URLPROD: 'https://cadastro-bae66bfedd89.herokuapp.com/api/',
+   URLPROD: 'https://jornadatrabalho-e718518835f0.herokuapp.com/api/',
    URLTEST: 'http://localhost:8081/api/'
 };

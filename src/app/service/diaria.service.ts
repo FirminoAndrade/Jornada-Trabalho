@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { IDiaria } from '../model/diaria';
 
-const URL = environment.URLTEST
+const URL = environment.URLPROD
 
 @Injectable({
   providedIn: 'root'
