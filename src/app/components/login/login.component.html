@@ -1,0 +1,35 @@
+<body>
+  <div class="conteudo-login">
+    <div class="border-conteudo">
+      <form class="conteudo-form">
+        <span>
+          <img src="assets/img/motorista_branco.png" alt="">
+        </span>
+        <div>
+          <mat-form-field class="conteudo-form">
+            <mat-label>Matricula</mat-label>
+            <input matInput [(ngModel)]="matricula"
+              type="text"
+              name="matricula" required/>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field class="conteudo-form">
+            <mat-label>Senha</mat-label>
+            <input matInput [(ngModel)]="senha" [type]="hide ? 'password' : 'text'"
+              name="senha" required/>
+              <button class="buttonVisibilidadeSenha" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+          </mat-form-field>
+        </div>
+        <div class="example-button-row">
+          <button mat-fab extended color="primary" (click)="submitLogin()">
+            <mat-icon>login</mat-icon>
+            Logar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

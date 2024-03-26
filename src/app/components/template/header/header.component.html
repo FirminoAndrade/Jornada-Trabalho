@@ -1,0 +1,15 @@
+<mat-toolbar class="header">
+  <span>
+    <img src="assets/img/motorista_azul.jpg" alt="">
+  </span>
+  <div class="icons">
+    <p>Olá, Motorista {{ nome }}</p>
+    <button class="menu" mat-icon-button [matMenuTriggerFor]="opcoes"><mat-icon class="iconeMenu" >menu</mat-icon></button>
+    <mat-menu #opcoes="matMenu">
+    <button mat-menu-item routerLink="/home"><mat-icon>home</mat-icon>Home</button>
+    <button mat-menu-item routerLink="/diaria/{{ id }}"><mat-icon>directions_bus</mat-icon>Iniciar Trabalho</button>
+    <button mat-menu-item routerLink="/listar/{{ id }}"><mat-icon>list</mat-icon>Listar Diárias</button>
+    <button mat-menu-item routerLink=""><mat-icon>exit_to_app</mat-icon>Sair</button>
+  </mat-menu>
+</div>
+</mat-toolbar>

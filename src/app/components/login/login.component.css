@@ -1,0 +1,67 @@
+img {
+  margin: 0px auto;
+  height: 150px;
+  width: 150px;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
+  color:  blue;
+  font-family: Poppins,sans-serif;
+}
+
+.conteudo-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 10%;
+
+}
+
+.border-conteudo {
+  width: 60%;
+  border: solid 2px  #3f48cc;
+  padding: 1px 20px;
+  margin: 2%;
+  box-shadow: 2px 3px 6px  #3f48cc;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.conteudo-form {
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0, 0px 0px rgba(255, 254, 254, 0);
+  text-align: center;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  margin: 0 auto;
+}
+
+.conteudo-form :hover {
+  box-shadow: 0, 30px 60px 0 rgb(255, 253, 253);
+}
+
+
+.example-button-row {
+  padding-bottom: 2%;
+}
+
+.buttonVisibilidadeSenha {
+  color:  #3f48cc;
+}
+
+button {
+  color: white;
+}

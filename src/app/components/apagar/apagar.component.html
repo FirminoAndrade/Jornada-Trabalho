@@ -1,0 +1,87 @@
+
+<body>
+  <app-header></app-header>
+   <h1>Apagar Diária de Operação</h1>
+  <hr>
+  <div class="a">
+    <div class="b">
+      <mat-form-field class="campo_menor">
+        <mat-label>Atividade</mat-label>
+        <input matInput #input [(ngModel)]="diaria.atividade"
+        name="atividade" disabled/>
+      </mat-form-field>
+    </div>
+
+    <div class="div_hora_data">
+    <label>Data </label>
+      <input class="input_hora" matInput [(ngModel)]="diaria.data"
+      type="text"
+      name="data" disabled>
+    </div>
+  </div>
+
+    <form>
+      <mat-form-field class="campo_menor">
+        <mat-label>Número Veiculo</mat-label>
+        <input matInput #input maxlength="11" minlength="11" type="number" [(ngModel)]="diaria.numero_veiculo" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        name="numero_veiculo"
+        placeholder="Ex: 0123456789" disabled/>
+      </mat-form-field>
+
+      <mat-form-field class="campo_menor">
+        <mat-label>Número da Linha</mat-label>
+        <input matInput #input maxlength="11" minlength="11" type="number" [(ngModel)]="diaria.linha" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        name="linha"
+        placeholder="Ex: 0123456789" disabled/>
+      </mat-form-field>
+
+      <mat-form-field class="campo_menor">
+        <mat-label>Horário Inicial</mat-label>
+        <input matInput #input [(ngModel)]="diaria.hora_inicial" type="time"
+        name="hora_inicial"
+        placeholder="Ex: 00:00" disabled/>
+      </mat-form-field>
+
+
+      <mat-form-field class="campo_menor">
+        <mat-label>Número Inicial da Quilometragem</mat-label>
+        <input matInput #input [(ngModel)]="diaria.km_inicial"
+        name="km_inicial" disabled/>
+      </mat-form-field>
+
+
+      <mat-form-field class="campo_menor">
+        <mat-label>Número Final da Quilometragem</mat-label>
+        <input matInput #input [(ngModel)]="diaria.km_final"
+        name="km_final" disabled/>
+      </mat-form-field>
+
+      <mat-form-field class="campo_menor">
+        <mat-label>Horário Final</mat-label>
+        <input matInput #input [(ngModel)]="diaria.hora_final" type="time"
+        name="hora_final" disabled/>
+      </mat-form-field>
+
+     <mat-form-field class="campo_menor">
+        <mat-label>Valor Depositado</mat-label>
+        <input matInput [(ngModel)]="diaria.valor_depositado" type="text" mask="separator.2" thousandSeparator="." name="valor_depositado" disabled/>
+      </mat-form-field>
+
+      <mat-form-field class="campo_menor">
+        <mat-label>Número Total de Passageiros</mat-label>
+        <input matInput #input maxlength="11" minlength="11" type="number" [(ngModel)]="diaria.numero_passageiro"
+        name="numero_passageiro" disabled/>
+      </mat-form-field>
+
+      <mat-form-field class="campo_textarea">
+        <mat-label>Checklist</mat-label>
+        <textarea matInput #letras [(ngModel)]="diaria.observacao" type="text" name="observacao" rows="4" disabled></textarea>
+      </mat-form-field>
+  </form>
+
+     <div class="buttons">
+      <button (click)="apagarDiaria()" class="mat-elevation-z8" mat-raised-button color="primary">APAGAR</button>
+      <button (click)="navegarParaListaDiarias()" class="mat-elevation-z8" mat-raised-button color="warn">CANCELAR</button>
+    </div>
+
+    </body>

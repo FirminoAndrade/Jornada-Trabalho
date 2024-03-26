@@ -1,0 +1,77 @@
+.content {
+  width: 80%;
+  margin: 1.4rem auto auto auto;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  margin-left: 0rem;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-left: 2rem;
+}
+
+button {
+  margin-bottom: 1rem;
+}
+
+.button_Opcoes {
+  margin-top: 15px;
+}
+
+.consultas {
+  color: rgba(196, 105, 31, 0.884);
+}
+
+.agenda {
+  color: green;
+}
+
+.edit {
+  color: blue;
+}
+
+.delete {
+  color: rgb(253, 0, 0);
+}
+
+body {
+
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 95%;
+    margin: 1.4rem auto auto auto;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .buttonAdd {
+    margin-top: 5px;
+    width: 80%;
+    margin-left: 30px;
+    align-items: center;
+  }
+
+  .table {
+    display: block;
+    width: 150px;
+    height: 290px;
+    overflow: scroll;
+  }
+
+  th {
+    font-size: 12px;
+    margin-left: 50px;
+  }
+
+  td {
+    font-size: 10px;
+  }
+}

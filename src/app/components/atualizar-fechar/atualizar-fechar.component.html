@@ -1,0 +1,100 @@
+<body>
+  <app-header></app-header>
+   <h1>Cadastro Diária de Operação</h1>
+  <hr>
+  <div class="a">
+    <div class="b">
+      <mat-form-field class="campo_menor">
+        <mat-label>Em Operação</mat-label>
+        <mat-select [(ngModel)]="diaria.atividade" name="sexo" required>
+          <mat-option *ngFor="let select of atividade" [value]="select.valor">
+            {{select.viewValor}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="div_hora_data">
+    <label>Data </label>
+      <input class="input_hora" matInput [(ngModel)]="diaria.data"
+      type="text"
+      name="data" disabled>
+      <br>
+      <label>Hora </label>
+      <input class="input_hora" matInput ngModel="{{ data | date:'HH:mm'}}"
+      type="text"
+      name="data" disabled>
+    </div>
+  </div>
+
+    <form>
+      <mat-form-field class="campo_menor">
+        <mat-label>Número Veiculo</mat-label>
+        <input matInput #input maxlength="11" minlength="11" type="number" [(ngModel)]="diaria.numero_veiculo" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        name="numero_veiculo"
+        placeholder="Ex: 0123456789" required/>
+      </mat-form-field>
+
+      <mat-form-field class="campo_menor">
+        <mat-label>Número da Linha</mat-label>
+        <input matInput #input maxlength="11" minlength="11" type="number" [(ngModel)]="diaria.linha" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        name="linha"
+        placeholder="Ex: 0123456789" required/>
+      </mat-form-field>
+
+      <mat-form-field class="campo_menor">
+        <mat-label>Horário Inicial</mat-label>
+        <input matInput #input [(ngModel)]="diaria.hora_inicial" type="time"
+        name="hora_inicial"
+        placeholder="Ex: 00:00" required/>
+      </mat-form-field>
+
+
+      <mat-form-field class="campo_menor">
+        <mat-label>Número Inicial da Quilometragem</mat-label>
+        <input matInput #input maxlength="11" minlength="11" type="number" [(ngModel)]="diaria.km_inicial" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        name="km_inicial"
+        placeholder="Ex: 0123456789"/>
+      </mat-form-field>
+
+
+      <mat-form-field class="campo_menor">
+        <mat-label>Número Final da Quilometragem</mat-label>
+        <input matInput #input maxlength="11" minlength="11" type="number" [(ngModel)]="diaria.km_final" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        name="km_final"
+        placeholder="Ex: 0123456789"/>
+      </mat-form-field>
+
+      <mat-form-field class="campo_menor">
+        <mat-label>Horário Final</mat-label>
+        <input matInput #input [(ngModel)]="diaria.hora_final" type="time"
+        name="hora_final"
+        placeholder="Ex: 00:00" required/>
+      </mat-form-field>
+
+     <mat-form-field class="campo_menor">
+        <mat-label>Valor Depositado</mat-label>
+        <input matInput [(ngModel)]="diaria.valor_depositado" type="text" mask="separator.2" thousandSeparator="." name="valor_depositado" placeholder="Ex: 123.45"/>
+      </mat-form-field>
+
+      <mat-form-field class="campo_menor">
+        <mat-label>Número Total de Passageiros</mat-label>
+        <input matInput #input maxlength="11" minlength="11" type="number" [(ngModel)]="diaria.numero_passageiro"
+        name="numero_passageiro"
+        placeholder="Ex: 0123456789"/>
+      </mat-form-field>
+
+      <mat-form-field class="campo_textarea">
+        <mat-label>Checklist</mat-label>
+        <textarea matInput #letras [(ngModel)]="diaria.observacao" type="text" name="observacao" rows="4"></textarea>
+        <mat-hint align="end">{{letras.value.length}} / 1000</mat-hint>
+      </mat-form-field>
+  </form>
+
+     <div class="buttons">
+      <button (click)="atualizarDiaria()" class="mat-elevation-z8" mat-raised-button color="primary">ATUALIZAR/FECHAR</button>
+      <button (click)="navegarParaListaOperecoes()" class="mat-elevation-z8" mat-raised-button color="warn">CANCELAR</button>
+    </div>
+
+    </body>
+

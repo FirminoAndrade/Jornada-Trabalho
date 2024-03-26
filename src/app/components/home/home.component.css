@@ -1,0 +1,16 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("src/assets/img/mobi_brasil.png");
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+
+  body {
+    height: 100%;
+    width: 100%;
+    background-image: url("src/assets/img/mobi_brasil1.png");
+    background-size: cover;
+  }
+}

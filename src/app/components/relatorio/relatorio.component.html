@@ -1,0 +1,34 @@
+<body>
+
+  <button type="reset" (click)="voltar()" class="button no-print" mat-stroked-buttoncolor="warn"><mat-icon>keyboard_return</mat-icon></button>
+
+<button class="botaoImprimir no-print" onclick="window.print()" mat-fab extended color="primary"><mat-icon>download</mat-icon> Imprimir</button>
+
+<div class="container_impressao">
+  <div>
+    <img src="assets/img/motorista_branco.png" alt="" />
+  </div>
+
+  <div class="cabecalho">
+    <h1>Relatório de Operação</h1>
+    <p> {{ diaria.data }} </p>
+  </div><strong></strong>
+  <p><strong>Nome do Operador:</strong> {{ nome }}</p>
+  <p><strong>Matrícula:</strong>  {{ matricula }}</p>
+  <p><strong>Número do Veiculo:</strong> {{ diaria.numero_veiculo }}</p>
+  <p><strong>Número da Linha:</strong> {{ diaria.linha }}</p>
+  <p><strong>Número de Total de Passageiros:</strong> {{ diaria.numero_passageiro }}</p>
+  <p><strong>Valor Depositado: $ </strong> {{ diaria.valor_depositado | mask:"separator": {thousandSeparator: ','} }}</p>
+  <table class="tabela_horario">
+    <tr>
+        <td><strong>Horário Inicial:</strong> {{ diaria.hora_inicial }}h</td>
+        <td><strong>Horário Final:</strong> {{ diaria.hora_final }}h</td>
+    </tr>
+    <tr>
+        <td><strong>Kilometragem Inicial:</strong> {{ diaria.km_inicial }}</td>
+        <td><strong>Kilometragem Final:</strong> {{ diaria.km_final }}</td>
+        <td><strong>Kilometragem Total:</strong> {{ kilometragemTotal }}</td>
+    </tr>
+</table>
+</div>
+</body>

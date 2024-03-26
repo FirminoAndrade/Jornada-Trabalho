@@ -1,0 +1,78 @@
+-- retirar botoes da impresao -- .only-print {
+  display: none;
+}
+
+@media print {
+
+  .no-print {
+    display: none !important;
+  }
+
+  .only-print {
+    display: block;
+  }
+}
+
+img {
+  display: block;
+  margin: 0px auto;
+  width: 10%;
+  height: 10%;
+}
+
+.cabecalho {
+  text-align: center;
+}
+
+.button {
+  margin-left: 2rem;
+}
+
+.botaoImprimir {
+  margin-top: 10px;
+  margin-left: 80%;
+  margin-right: 3px;
+}
+
+.tabela_horario {
+  width: 40%;
+  height: 30%;
+}
+
+@media screen and (max-width: 600px) {
+
+  img {
+    display: block;
+    margin: 0px auto;
+    width: 20%;
+    height: 20%;
+  }
+
+  .cabecalho {
+    text-align: center;
+  }
+
+  .button {
+    margin-left: 2rem;
+  }
+
+  .botaoImprimir {
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 60%;
+    margin-right: 3px;
+  }
+
+  p {
+    margin-left: 10px;
+  }
+
+  .tabela_horario {
+    margin-left: 10px;
+    width: 80%;
+    height: 80%;
+  }
+
+}
+
+

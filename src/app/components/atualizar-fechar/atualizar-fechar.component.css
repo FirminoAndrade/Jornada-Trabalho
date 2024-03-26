@@ -1,0 +1,112 @@
+form {
+  width: 67%;
+}
+
+.campo_menor {
+  font-weight: bold;
+  text-align: center;
+  width: 30%;
+  margin-left: 30px;
+}
+
+.campo_textarea {
+  font-weight: bold;
+  text-align: center;
+  width: 62.5%;
+  margin-left: 2rem;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-left: 2rem;
+}
+
+.a {
+  width: 65%;
+  height: 9%;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.b {
+  width: 65%;
+}
+
+.div_hora_data {
+  margin-left: auto;
+}
+
+.input_hora {
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.buttons {
+  width: 50%;
+  text-align: start;
+  margin-left: 37.5%;
+}
+
+button {
+  margin-right: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+
+  form {
+    width: 100%;
+  }
+
+  .campo_menor {
+    font-weight: bold;
+    text-align: center;
+    width: 95%;
+    margin-left: 10px;
+  }
+
+  .campo_textarea {
+    font-weight: bold;
+    text-align: center;
+    width: 95%;
+    margin-left: 10px;
+  }
+
+  h1 {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .a {
+    width: 45%;
+    margin-bottom: 10px;
+    display: flex;
+  }
+
+  .b {
+    width: 100%;
+  }
+
+  .div_hora_data {
+    margin-left: 30px;
+  }
+
+  .input_hora {
+    margin-bottom: 2px;
+  }
+
+  .buttons {
+    margin-top: 20px;
+    width: 95%;
+    text-align: start;
+    margin-left: 10px;
+  }
+
+  button {
+    width: 41%;
+    margin-right: 2rem;
+    padding-right: 2rem;
+    padding-left: 40px;
+  }
+}
