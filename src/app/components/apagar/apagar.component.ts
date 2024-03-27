@@ -13,7 +13,7 @@ export class ApagarComponent {
 
   diaria: IDiaria = {
     atividade: '',
-    numero_veiculo: 0,
+    numero_veiculo: '',
     linha: 0,
     km_inicial: 0,
     km_final: 0,

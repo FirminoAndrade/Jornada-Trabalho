@@ -1,7 +1,7 @@
 export interface IDiaria {
   id?: string,
   atividade: string,
-  numero_veiculo: number,
+  numero_veiculo: string,
   linha: number,
   km_inicial: number,
   km_final: number,

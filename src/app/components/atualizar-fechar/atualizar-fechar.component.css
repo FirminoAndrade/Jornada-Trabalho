@@ -2,6 +2,14 @@ form {
   width: 67%;
 }
 
+.campo_meno {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 30%;
+  margin-left: 30px;
+}
+
 .campo_menor {
   font-weight: bold;
   text-align: center;
