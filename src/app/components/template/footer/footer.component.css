@@ -1,0 +1,10 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+  font-style: oblique;
+  height: 3%;
+  background-color: #3f48cc;
+  color: white;
+}
